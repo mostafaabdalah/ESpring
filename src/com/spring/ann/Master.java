@@ -6,13 +6,26 @@ import org.springframework.stereotype.Component;
 @Component("master")
 public class Master implements MasterInterface{
 
-	
+	@Autowired
 	private SportInterface sportInterface;
+	
+	/*
 	@Autowired
 	public Master(SportInterface sportInterface) {
 		this.sportInterface = sportInterface;
 	}
 
+*/
+	
+	/*
+	@Autowired
+	public void setSportInterface(SportInterface sportInterface) {
+		this.sportInterface = sportInterface;
+	}
+	
+	
+	*/
+	
 	@Override
 	public void name() {
 		// TODO Auto-generated method stub
@@ -20,6 +33,8 @@ public class Master implements MasterInterface{
 		System.out.println("I am Master");
 		
 	}
+
+	
 
 	@Override
 	public void callMySport() {
