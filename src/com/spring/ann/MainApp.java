@@ -17,9 +17,9 @@ public class MainApp {
 
 				// retrieve bean from spring container
 				
-				MasterInterface ms = context.getBean("master",MasterInterface.class);
+				MasterInterface ci = context.getBean("master",MasterInterface.class);
 				
-				ms.callMySport();
+				ci.name();
 				
 				context.close();
 
