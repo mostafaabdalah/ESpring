@@ -24,10 +24,7 @@ public class MainApp {
 		
 		// call methods on the bean
 		
-		
-		System.out.println(admin1);
-		System.out.println(admin2);
-		System.out.println(admin1 == admin2);
+		admin1.name();
 
 		// close the context
 		
