@@ -1,28 +1,18 @@
 package com.spring.ann;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-
-@Component("master")
+@Component
 public class Master implements MasterInterface{
-
-	@Autowired
-	@Qualifier("user")
-	private CompanyInterface ci;
 
 	@Override
 	public void name() {
 		// TODO Auto-generated method stub
 		
-		ci.Start();
+		System.out.println("I am Master");
 	}
 
-	@Override
-	public void callMySport() {
-		// TODO Auto-generated method stub
-		
-	}
+
+	
 	
 
 }
