@@ -3,13 +3,15 @@ package com.spring.noxml;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-//@ComponentScan("com.spring.noxml")
+@PropertySource("classpath:data.properties")
+@ComponentScan("com.spring.noxml")
 public class SpringConfige {
 
 
-
+/*
 	@Bean
 	public MasterInterface myMaster() {
 	
@@ -22,4 +24,5 @@ public class SpringConfige {
 	return new Sport();
 	}
 
+*/
 }

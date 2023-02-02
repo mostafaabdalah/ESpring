@@ -11,6 +11,12 @@ public class Master implements MasterInterface{
 		System.out.println("I am Master");
 	}
 
+	@Override
+	public void callMySport() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 	
 	
